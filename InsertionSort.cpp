@@ -16,7 +16,7 @@ int insertion_sort(int a[],int n)
 }
 int main()
 {
-	int n,num;
+	int n;
 	cout<<"Enter total numbers: ";
 	cin>>n;
 	int a[n];
