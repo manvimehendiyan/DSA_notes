@@ -1,3 +1,6 @@
+//This code identifies whether the input matrix is a sparse matrix or not.
+//A sparse matrix is a matrix in which majority of the elements are 0. 
+//If the number of zeroes is more than half the elements of the matrix, it is a sparse matrix.
 #include<iostream>
 using namespace std;
 int main()
