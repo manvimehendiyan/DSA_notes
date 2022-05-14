@@ -1,3 +1,4 @@
+//This code takes an array input and differentiate between the odd and even numbers in the input array.
 #include<iostream>
 using namespace std;
 int main()
