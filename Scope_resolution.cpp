@@ -2,6 +2,7 @@
 //Class functions defined outside the class
 //Access a global variable with same name as a local variable
 //Access a static variables
+//Not using namespace std
 //Use inbuilt libraries (cin cout with scope resolution operator)
 #include<iostream>
 int x=10;
