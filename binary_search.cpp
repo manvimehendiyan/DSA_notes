@@ -13,19 +13,22 @@ int bubble_sort(int a[],int n)
 			if(a[j]>a[j+1])
 				swap(&a[j],&a[j+1]);
 }
-int binary_search(int a[],int LB,int UB,int num)
+int binary_search(int a[],int n,int m)
 {
-	if(UB>=LB)
+	int found=0;
+	int LB=0;
+	int UB=n-1;
+	for(int i=0;i<n;i++)
 	{
 		int MID=(UB+LB)/2;
-		if(a[MID]==num)
-			return MID;
-		else if(a[MID]>num)
-			return binary_search(a,LB,MID-1,num);
-		else if(a[MID]<num)
-			return binary_search(a,MID+1,UB,num);
+		if(a[MID]==m)
+			return 1;
+		else if(a[MID]>m)
+			UB=MID-1;
+		else if(a[MID]<m)
+			LB=MID+1;
 	}
-	return -1;
+	return 0;
 }
 int main()
 {
@@ -38,8 +41,8 @@ int main()
 	cout<<"Enter the number to be searched: ";
 	cin>>num;
 	bubble_sort(a,n);
-	int x=binary_search(a,0,n-1,num);
-	if(x!=-1)
+	int x=binary_search(a,n,num);
+	if(x==1)
 		cout<<num<<" FOUND!!"<<endl;
 	else
 		cout<<num<<" NOT FOUND"<<endl;
