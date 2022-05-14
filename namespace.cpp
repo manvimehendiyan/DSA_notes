@@ -1,3 +1,6 @@
+//Demonstrating the use of namespace 
+//Namespaces are used to organize code into logical groups and to prevent name collisions 
+//that can occur especially when your code base includes multiple libraries.
 #include<iostream>
 using namespace std;
 namespace n1
