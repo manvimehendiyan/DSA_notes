@@ -35,6 +35,7 @@ int main()
 		cout<<"Student "<<i+1<<endl;
 		S[i].displayInfo();
 	}
+	
 	//using pointers
 	cout<<"\nUSING POINTERS"<<endl;
 	Student *T[2];
